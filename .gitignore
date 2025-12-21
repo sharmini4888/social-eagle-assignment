@@ -32,8 +32,16 @@ env/
 ENV/
 env.bak/
 venv.bak/
-# Virtualenv created inside the project (ignore entire folder)
-RPA/
+
+# RPA: ignore virtual environment contents but keep project files
+RPA/Lib/
+RPA/Scripts/
+RPA/Include/
+RPA/pyvenv.cfg
+RPA/Lib/site-packages/
+RPA/**/__pycache__/
+RPA/**/*.py[cod]
+RPA/**/.Python
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
