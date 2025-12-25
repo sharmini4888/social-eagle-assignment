@@ -1,0 +1,2 @@
+LangChain helps developers build applications powered by Large Language Models.
+It supports document loading, text splitting, embeddings, and more.
