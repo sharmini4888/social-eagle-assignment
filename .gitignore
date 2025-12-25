@@ -132,4 +132,12 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Langchain-specific ignores
+# Ignore virtual environments and generated DB and caches inside Langchain
+Langchain/venv/
+Langchain/chroma_db/
+Langchain/chroma_db/**
+Langchain/*.sqlite
+Langchain/**/__pycache__/
+
 # End of .gitignore
