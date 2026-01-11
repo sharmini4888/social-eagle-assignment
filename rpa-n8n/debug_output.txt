@@ -1,0 +1,46 @@
+C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\application.py:1076: RuntimeWarning: Application is not loaded correctly (WaitForInputIdle failed)
+  warnings.warn('Application is not loaded correctly (WaitForInputIdle failed)', RuntimeWarning)
+Creating new file...
+Error finding window: There are 3 elements that match the criteria {'title_re': '.*Notepad.*', 'top_level_only': True, 'backend': 'uia'}
+Visible windows:
+ - ''
+ - 'Taskbar'
+ - 'Status'
+ - 'social-eagle-assignment - Antigravity - Implementation Plan'
+ - 'Untitled - Notepad'
+ - '*Invoke-ReshitMethod -Uri httplocalh - Notepad'
+ - 'Untitled - Notepad'
+ - ''
+ - ''
+ - ''
+ - 'Program Manager'
+Traceback (most recent call last):
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\rpa-n8n\rpa_tool.py", line 77, in <module>
+    automate_notepad(input_text)
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\rpa-n8n\rpa_tool.py", line 31, in automate_notepad
+    raise e
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\rpa-n8n\rpa_tool.py", line 25, in automate_notepad
+    main_window.wait("visible", timeout=30)
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\application.py", line 529, in wait
+    wait_until(timeout, retry_interval,
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\timings.py", line 359, in wait_until
+    func_val = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\application.py", line 530, in <lambda>
+    lambda: self.__check_all_conditions(check_method_names, retry_interval))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\application.py", line 482, in __check_all_conditions
+    ctrls = self.__resolve_control(self.criteria, retry_interval, float(retry_interval) // 2)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\application.py", line 250, in __resolve_control
+    ctrl = wait_until_passes(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\timings.py", line 436, in wait_until_passes
+    func_val = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\application.py", line 203, in __get_ctrl
+    dialog = self.backend.generic_wrapper_class(findwindows.find_element(**criteria[0]))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\Desktop\Social Eagle\social-eagle-assignment\venv\Lib\site-packages\pywinauto\findwindows.py", line 98, in find_element
+    raise exception
+pywinauto.findwindows.ElementAmbiguousError: There are 3 elements that match the criteria {'title_re': '.*Notepad.*', 'top_level_only': True, 'backend': 'uia'}
